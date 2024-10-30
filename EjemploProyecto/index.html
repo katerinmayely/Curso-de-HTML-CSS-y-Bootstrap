@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagenes/icono.png" type="image/x-icon">
     <title>Saludo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img width="50px" src="imagenes/icono.png" alt="imagen de espadas">
-            <span>Kattherine Hernandez</span>
-            <a href="mi-historia.html">Mi historia</a>
+        <nav class="navbar navbar-expand-sm bg-dark bg-gradient ps-4 pe-4">
+            <div class="navbar-brand">
+                <img width="50px" src="imagenes/icono.png" alt="imagen de espadas">
+                <span class="text-light">Kattherine Hernandez</span>
+            </div>
+
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="mi-historia.html">Mi historia</a>
+                </li>
+            </ul>
         </nav>
     </header>
     
     <h1>Saludo a mi yo del futuro</h1>
-    <img src="imagenes/perfil.jpg" alt="foto de perfil">
+    <img id="perfil" width="200px" src="imagenes/perfil.jpg" alt="foto de perfil">
 
-    <p>
+    <p class="container">
         Me considero una persona empática y social, lo cual me permite conectar fácilmente 
         con otras personas y establecer relaciones profesionales efectivas, algo que considero 
         crucial al momento de negociar con clientes. Además, poseo una habilidad natural para 
@@ -26,13 +35,13 @@
         ambiente de confianza en cualquier interacción.
     </p>
 
-    <div>
-        <img src="imagenes/css-3.png" alt="imagen de css">
-        <img src="imagenes/html-5.png" alt="imagen de html">
-        <img src="imagenes/secuencia-de-comandos-de-java.png" alt="imagen de javascript">
+    <div id="imagenes" class="container">
+        <img width="100px" src="imagenes/css-3.png" alt="imagen de css">
+        <img width="100px" src="imagenes/html-5.png" alt="imagen de html">
+        <img width="100px" src="imagenes/secuencia-de-comandos-de-java.png" alt="imagen de javascript">
     </div>
 
-    <p>
+    <p class="container">
         En cinco años me veo como docente de la UNAH (soñar no cuesta jsjs), 
         impartiendo clases relacionadas con programación como ser Programación 2, 
         Programación orientada a objetos, entre otras. O también, podría estar trabajando 
@@ -44,35 +53,37 @@
         cada día me mentalizo con el objetivo de ser mejor que el anterior.
     </p>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3JIA9jKUIQw?si=Nf670fBdgMDpAJBK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3JIA9jKUIQw?si=Nf670fBdgMDpAJBK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
-    <p>
+    <p class="container">
         Kattherine del futuro, la Katt de hoy con 22 años, quiere expresarte
         que le está echando muchas ganas, que está poniendo mucho esfuerzo para alcanzar cada meta. 
         Y te quiero agradecer porque sé que no te rendiste, que lo lograste.
     </p>
 
-    <div>
-        <p>
-            La victoria está reservada para aquellos que están dispuestos 
-            a pagar su precio.
-            <span>Sun Tzu</span>
-        </p>
+    <div id="frase" class="container alert alert-secondary" role="alert">
+        La victoria está reservada para aquellos que están dispuestos 
+        a pagar su precio.
+        <br>
+        <i>Sun Tzu</i>
     </div>
 
-    <form>
+    <form class="container">
+        <h4 id="titulo-form">¿Qué respondes?</h4>
         <label for="edad">Edad actual:</label>
         <input type="text" name="edad" id="edad">
 
         <label for="mensaje">Mensaje</label>
         <textarea name="mensaje" id="mensaje"></textarea>
 
-        <button>Enviar</button>
+        <button class="btn btn-dark">Enviar</button>
     </form>
 
     <br><br>
 
-    <footer>
+    <footer class="bg-dark bg-gradient text-light">
         <div>
         <!-- etiqueta "a" por si quieren enlazar a sus perfiles--> 
             <a href="facebook.com">
